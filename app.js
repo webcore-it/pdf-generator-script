@@ -3,14 +3,12 @@
  */
 'use strict';
 
-
 var dataService = require('./services/data.service');
 var pdfService = require('./services/pdf.service');
 
 var invoiceId,
   invoiceData,
   generatedFile;
-
 
 
 // Get invoice id from args.
@@ -20,9 +18,8 @@ if (isNaN(invoiceId)) {
   return false;
 }
 
-// Contert the args string to a number.
+// Convert the args string to a number.
 invoiceId = parseInt(invoiceId, 10);
-
 
 
 // Get invoice data for given id.
@@ -34,7 +31,6 @@ try {
 }
 
 
-
 // Generate pdf file.
 // Get invoice data for given id.
 try {
@@ -43,7 +39,6 @@ try {
   console.log('[ERROR] ' + error.message);
   return false;
 }
-
 
 
 console.log('[OK] Successfully generated PDF file at: ' + generatedFile);

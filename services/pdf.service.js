@@ -140,7 +140,7 @@ function getPositions(positions) {
     sumTax += parseFloat(taxPrice);
     sumNet += parseFloat(price);
 
-    // Add positon as new row.
+    // Add position as new row.
     result.push([
       positions[i].name,
       positions[i].amount + ' ' + translateScaleUnit(positions[i].scaleUnit),

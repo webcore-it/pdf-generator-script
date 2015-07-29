@@ -11,14 +11,15 @@ npm install
 
 ### Run
 
-The script takes a invoice id as first args parameter. Possible test invoice ids are `42` and `666` (dummy data can be found in `/services/data.service.js`).
+The script takes an invoice id as first args parameter. Possible test invoice ids are `42` and `666` (dummy data can be found in `/services/data.service.js`).
 
-To generate a pdf run
+To generate a pdf run:
 ```bash
+# Generates a pdf invoice in the files folder:
 node app.js 42
 ```
 
-To get error messages run
+To get error messages run:
 
 ```bash
 # Invalid invoice data:
@@ -40,5 +41,6 @@ node app.js oneTwoThree
 Test are writen as jasmine spec files. So jasmine must be installed to be able to run the tests (`npm install -g jasmine`).
 
 ```bash
+# Run the tests:
 jasmine
 ```
